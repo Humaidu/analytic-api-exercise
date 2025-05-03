@@ -1,6 +1,8 @@
 from sqlmodel import Field, SQLModel
 
-# Define Models (SQLAlchemy + SQLModel) for your tables
+# Defining Models (SQLAlchemy + SQLModel) for my tables
+
+# Customer Table: Stores customer information such as name, email, and country.
 class Customer(SQLModel, table=True):
     __tablename__ = "customers"
 
@@ -9,6 +11,8 @@ class Customer(SQLModel, table=True):
     email: str
     country: str
 
+
+# Product Table: Contains information about products available for purchase.
 class Product(SQLModel, table=True):
     __tablename__ = "products"
 
@@ -17,6 +21,8 @@ class Product(SQLModel, table=True):
     category: str
     price: float
 
+
+# Order Table: Tracks individual orders placed by customers.
 class Order(SQLModel, table=True):
     __tablename__ = "orders"
 
@@ -25,6 +31,8 @@ class Order(SQLModel, table=True):
     order_date: str
     status: str
 
+
+# OrderItem Table: Represents items within a specific order (an order can have multiple items).
 class OrderItem(SQLModel, table=True):
     __tablename__ = "order_items"
 

@@ -1,7 +1,12 @@
+import os
 from sqlmodel import  SQLModel, create_engine, Session
+from dotenv import load_dotenv
+
+# Loads from .env file
+load_dotenv()  
 
 # Database URL
-DATABASE_URL = "mysql+mysqlconnector://testuser:testpass@localhost:3306/testdb"
+DATABASE_URL = os.getenv("DATABASE_URL")
 
 # Create a database engine
 engine = create_engine(DATABASE_URL, echo=True)

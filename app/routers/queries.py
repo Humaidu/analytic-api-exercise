@@ -5,27 +5,9 @@ from sqlmodel import Session, select
 from typing import List
 from sqlalchemy import text
 
- 
-
 router = APIRouter()
 
 # FastAPI Routes
-# @router.get("/customers", response_model=List[Customer])
-# def get_customers(session: Session = Depends(get_session)):
-#     return session.exec(select(Customer)).all()
-
-# @router.get("/products", response_model=List[Product])
-# def get_products(session: Session = Depends(get_session)):
-#     return session.exec(select(Product)).all()
-
-# @router.get("/customers/{customer_id}/orders", response_model=List[Order])
-# def get_customer_orders(customer_id: int, session: Session = Depends(get_session)):
-#     return session.exec(select(Order).where(Order.customer_id == customer_id)).all()
-
-# @router.get("/order-items", response_model=List[OrderItem])
-# def get_order_items(session: Session = Depends(get_session)):
-#     return session.exec(select(OrderItem)).all()
-
 @router.get("/analytics/top-customers", summary="Top Customers by Spending", description="Returns the top 5 customers ranked by total spending on orders.", response_model=List[dict])
 def get_top_customers(session: Session = Depends(get_session)):
     query = """
@@ -98,5 +80,4 @@ def get_frequent_buyers(session: Session = Depends(get_session)):
         ORDER BY total_orders DESC;
     """
     results = session.exec(text(query)).mappings().all()
-    # return [dict(row) for row in results]
     return results

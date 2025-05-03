@@ -1,7 +1,6 @@
 from sqlmodel import Field, SQLModel
 
 # Define Models (SQLAlchemy + SQLModel) for your tables
-
 class Customer(SQLModel, table=True):
     __tablename__ = "customers"
 

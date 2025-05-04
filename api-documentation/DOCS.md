@@ -5,7 +5,7 @@ Swagger Docs: [http://34.247.79.34/docs](http://34.247.79.34/docs)
 
 ---
 
-### 🔝 Top Customers by Spending
+### Top Customers by Spending
 **GET** `/analytics/top-customers`  
 Returns a list of customers who have spent the most on orders.
 

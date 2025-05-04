@@ -1,4 +1,4 @@
-# 📦 E-commerce Analytics API
+# 📦 Analytics API
 
 This project is a **FastAPI-based REST API** that performs **analytical queries** on an RDS MySQL database. It provides endpoints to help analyze customer behavior, product trends, and order data.
 
@@ -253,6 +253,7 @@ uvicorn app.main:app --host 0.0.0.0 --port 80
 http://<your-ec2-ip>/docs
 
 ```
+---
 
 ## 🔧 Production Deployment (EC2 + Nginx + systemd)
 

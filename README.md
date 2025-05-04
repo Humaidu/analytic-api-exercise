@@ -85,11 +85,11 @@ INSERT INTO order_items VALUES
 ```
 
 ### Queries to execute:
-- • Top Customers by Spending
-- • Monthly Sales Report (Only Shipped/Delivered)
-- • Products Never Ordered
-- • Average Order Value by Country
-- • Frequent Buyers (More Than One Order)
+- Top Customers by Spending
+- Monthly Sales Report (Only Shipped/Delivered)
+- Products Never Ordered
+- Average Order Value by Country
+- Frequent Buyers (More Than One Order)
 Hint: These are complex queries.
 
 ---
@@ -320,7 +320,6 @@ Enable the config:
 sudo ln -s /etc/nginx/sites-available/fastapi /etc/nginx/sites-enabled
 sudo nginx -t
 sudo systemctl restart nginx
-
 ```
 Now your FastAPI app should be served publicly on port 80 via Nginx.
 

@@ -15,9 +15,18 @@ Returns a list of customers who have spent the most on orders.
   {
     "customer_id": 1,
     "name": "Alice Smith",
-    "total_spent": 2371.00
+    "total_spent": 1671
   },
-  ...
+  {
+    "customer_id": 3,
+    "name": "Charlie Zhang",
+    "total_spent": 1200
+  },
+  {
+    "customer_id": 2,
+    "name": "Bob Jones",
+    "total_spent": 800
+  }
 ]
 ```
 

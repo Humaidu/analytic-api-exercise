@@ -324,6 +324,5 @@ sudo systemctl restart nginx
 ```
 Now your FastAPI app should be served publicly on port 80 via Nginx.
 
----
 
 

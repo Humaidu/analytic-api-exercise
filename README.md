@@ -6,9 +6,10 @@ Designed with clarity and maintainability in mind, the API follows good practice
 
 Here is the schema for the database
 
-```
+
 ### Using AWS RDS create a simple mysql database with the following SQL commands:
 
+```
 -- Drop tables if they exist
 DROP TABLE IF EXISTS order_items;
 DROP TABLE IF EXISTS orders;
@@ -121,7 +122,7 @@ ecommerce_api/
 │
 ├── requirements.txt          # Project dependencies
 └── README.md                 # Project documentation
-
+```
 ---
 
 ## ⚙️ Tech Stack
@@ -154,6 +155,7 @@ These endpoints provide insights and reports from the database:
 | `/analytics/average-order-value`    | Average order value grouped by customer country          |
 | `/analytics/frequent-buyers`        | Customers with more than one order                       |
 
+---
 
 ## Setting Up AWS RDS (MySQL) and Deploying FastAPI to EC2
 
@@ -322,10 +324,6 @@ sudo systemctl restart nginx
 ```
 Now your FastAPI app should be served publicly on port 80 via Nginx.
 
-
-
-
-
-
+---
 
 
